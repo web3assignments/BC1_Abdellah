@@ -23,7 +23,7 @@ contract TicketSystem {
 
     function bookTicket(uint id) public {
         require(id >= 0, "id must be equal or larger than 0");
-        Ticket memory ticket = ticketArray[id];
+        Ticket storage ticket = ticketArray[id];
         ticket.booked = true;
         emit ticketIsBooked(msg.sender, ticket.id, ticket.eventName);
         lastTicketBooked[msg.sender] = ticket;
