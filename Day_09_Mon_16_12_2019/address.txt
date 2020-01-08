@@ -1,0 +1,8 @@
+---------------------------FUNGIBLE TOKEN:------------------------------------------------
+Making transaction.
+Well! Transaction done!
+Transaction id 0xd75487019da928d99382868a09aa90fc27b2b9153c03481ba8cfd71c6e1e5cd0
+Retrieving Token.
+Your Token 0xe56ef522b3a13db0ec4179cd7b57019f23462d11
+
+---------------------------NON-FUNGIBLE TOKEN:------------------------------------------------
