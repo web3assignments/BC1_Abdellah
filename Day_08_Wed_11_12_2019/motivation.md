@@ -5,3 +5,4 @@ so that the incoming data is handled via a safe manner.
 Besides, I used also the rate limit pattern, because multiple 
 requests at once could affect the performance of the application.
 
+I used also the Proxy Delegate pattern, so that when a upgrade will take place, the dependencies won't be broken. 

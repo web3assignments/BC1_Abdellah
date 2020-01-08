@@ -24,8 +24,8 @@ contract TicketSystem is usingOraclize  {
     }
     
     function __callback(bytes32 myid, string memory result ) public {
-        if (msg.sender != provable_cbAddres()) revert();
-        name = result[0].name;
+        require(msg.sender == oraclize_cbAddress());
+        name = result;
     }
 
     Ticket[] public ticketArray;
@@ -53,10 +53,8 @@ contract TicketSystem is usingOraclize  {
     }
 
     function getRandomTicketOwnerName() public payable {
-         if (oraclize_getPrice("URL") > this.balance) {
-            return "please add some ETH to cover for the query fee";
-        } else {
-            oraclize_query("URL", "json(https://uinames.com/api/?amount=1)");
+        require(address(this).balance >= oraclize_getPrice("URL"), "add ETH");
+        oraclize_query("URL", "json(https://uinames.com/api/?amount=1)");
         }
     }
-}
+
