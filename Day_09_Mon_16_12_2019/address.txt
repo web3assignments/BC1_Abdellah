@@ -6,3 +6,13 @@ Retrieving Token.
 Your Token 0xe56ef522b3a13db0ec4179cd7b57019f23462d11
 
 ---------------------------NON-FUNGIBLE TOKEN:------------------------------------------------
+published
+Wed Jan 08 2020 01:09:26 GMT+0100
+contract address (rinkeby):
+0x1D61FF9a05A480B38A7F7420AB834EFc56F6A2e1
+published by
+0xD4035656C5b5944B0faAEb8eCD14E7f7ba0C6407
+
+
+-----------------------------RINKEBY OPENSEA----------------------------------------------------------------
+https://rinkeby.opensea.io/assets/0x1d61ff9a05a480b38a7f7420ab834efc56f6a2e1/10
