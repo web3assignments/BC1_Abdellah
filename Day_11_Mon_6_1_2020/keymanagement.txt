@@ -1,0 +1,8 @@
+--> Password manager:
+You can use a password manager to store all your pincodes, pass phrases, adresses and private keys.
+The only password you should know is the one to enter the application of the password manager. The passwords are stored cryptographically, so that no one can read them. 
+If you forgot your password of the password manager, all the passwords withtin the application are lost, because you will have no longer access to the database within the password manager.
+Some password managers offer also the option to automatically fill in your password when they encounter a form.
+--> Steel wallet:
+Another good option within this case is to stamp the passwords you need within a wallet of steel. You can always bring this wallet with you to every place you want.
+Another advantage is that you can't misspell the letters when you are reading from the wallet, because it is stamped clearly with a font in the steel.
