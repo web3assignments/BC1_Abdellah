@@ -10,6 +10,10 @@ import Web3Connect from "web3connect";
 
 function web3connect() {
 
+  const providerOptions = {
+    /* See Provider Options Section */
+  };
+
     return (
       <Web3Connect.Button
       network="mainnet" // optional

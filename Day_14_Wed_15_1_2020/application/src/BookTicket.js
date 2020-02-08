@@ -27,12 +27,16 @@ function BookTicket() {
     setContract(ticketSystem);
   }
 
+  const log = (result) => {
+    document.getElementById("log").innerHTML +=result+"\n";
+  }
+
   const bookTicket = () => {
     const result = contract.methods.bookTicket(
       ticketId
-    ).send({ from: wallet })
+    ).call({ from: wallet })
     .then((result) => {
-      console.log("result: " + result)
+      log("Ticket is booked!")
     });
   }
 
@@ -46,6 +50,7 @@ function BookTicket() {
   <Button onClick={() => bookTicket()} variant="primary" type="button" style={{marginBottom:12}}>
     Submit
   </Button>
+  <div id="log"></div>
           <Button onClick={() => history.push("/system")} size="lg" variant="light">Go back to all the options</Button>
         </header>
       </div>

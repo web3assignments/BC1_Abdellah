@@ -30,12 +30,16 @@ function MakeTicket() {
     setContract(ticketSystem);
   }
 
+  const log = (result) => {
+    document.getElementById("log").innerHTML +=result+"\n";
+  }
+
   const makeTicket = () => {
     const result = contract.methods.makeTicket(
       eventName, eventPlace
-    ).send({ from: wallet })
+    ).call({ from: wallet })
     .then((result) => {
-      console.log("result: " + result)
+      log("Ticket is made!")
     });
   }
 
@@ -57,6 +61,7 @@ function MakeTicket() {
   <Button onClick={() => makeTicket()} variant="primary" type="button" style={{marginBottom:12}}>
     Submit
   </Button>
+  <div id="log"></div>
 </Form>
           <Button onClick={() => history.push("/system")} size="lg" variant="light">Go back to all the options</Button>
         </header>

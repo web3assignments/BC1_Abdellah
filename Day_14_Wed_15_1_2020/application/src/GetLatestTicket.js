@@ -32,9 +32,9 @@ function GetLatestTicket() {
   }
 
   const getDetails = () => {
-    const result = contract.methods.getLatestTicketBookedDetails().send({ from: wallet })
+    const result = contract.methods.getLatestTicketBookedDetails().call({ from: wallet })
     .then((result) => {
-      log(result);
+      log("ID of the ticket: "+ result[0] + " Name of the ticket: "+ result[1] );
     });
   }
 
